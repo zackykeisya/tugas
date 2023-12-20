@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+<body>
+    <h1>belajar js</h1>
+    <script>
+        // input
+        // variabel bilangan dengan value 21
+        // let bilangan = 21;
+        // proses
+        // if (bilangan % 2 == 0){
+        //     hasil = "bilangan genap";
+        // } else {
+        //     hasil = "bilangan ganjil";
+        // }
+        // output
+
+        let alas = 12;
+        let tinggi = 15;
+        let hasil = 1/2 * alas * tinggi;
+        console.log("luas segitiga adalah" + hasil) 
+        // console.log(hasil)
+    </script>
+    <script>
+        let phi = 3.14;
+        let r = 10;
+        let hasilL = phi* 2 * r 
+        console.log("hasilnya:" + hasilL)
+    </script>
+    <script>
+        let panjang = 40;
+    let lebar = 25;
+    let hasilnya = panjang * lebar;
+    console.log("luas persegi panjang adalah" + hasilnya)
+    </script>
+    <script>
+        let tahunsekarang = 2023;
+        let tahunlalu = 2008;
+        let hasilll = tahunsekarang - tahunlalu;
+        console.log(`umur saya adalah ${hasilll} tahun`)
+
+        // no 3. :
+        let lampu =1;
+    if(lampu == 0){
+        console.log ("lampu mati");
+    } else if (lampu == 1){
+        console.log ("lampu nyala");
+    }
+
+    let a=5;
+    let b=10;
+    let c=15;
+    
+    if (a>b && a>c ){
+        console.log("bilangan a terbesar")
+    }
+    else if (b>a && b>c){
+        console.log ("bilangan b terbesar")
+    }
+    else if (c>a && c>b){
+        console.log ("bilangan c terbesar")
+    }
+
+    // no. 2
+
+    function Angkanya(angka) {
+    if (angka === 0) {
+        console.log("nol");
+    } else if (angka > 0) {
+        console.log("positif");
+    } else {
+        console.log("negatif");
+    }
+
+    if (angka % 2 === 0) {
+        console.log("genap");
+    } else {
+        console.log("ganjil");
+    }
+}
+
+var masukanangka = 10;
+
+if (!isNaN(masukanangka) && masukanangka !== 0) {
+    Angkanya(masukanangka);
+} else {
+    console.log;
+}
+
+
+
+    </script>
+</body>
+</html>
