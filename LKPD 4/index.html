@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+
+        // 1 
+
+
+// let PABP = Number(prompt ("nilai"));
+// let Matematika = Number (prompt ("nilai"));
+// let DPK = Number (prompt ("nilai"));
+// let rataRata = PABP + Matematika + DPK;
+// let hhh =  rataRata / 3
+// let grade = '';
+
+// if (rataRata >= 80 && rataRata <= 100) {
+//     grade = 'A';
+// } else if (rataRata >= 75 && rataRata < 80) {
+//     grade = 'B';
+// } else if (rataRata >= 65 && rataRata < 75) {
+//     grade = 'C';
+// } else if (rataRata >= 45 && rataRata < 65) {
+//     grade = 'D';
+// } else if (rataRata >= 0 && rataRata < 45) {
+//     grade = 'E';
+// } else {
+//     grade = 'K';
+// }
+// console.log(`Rata-rata nilai: ${hhh}`);
+// console.log(`Grade: ${grade}`);
+
+
+//  2
+
+
+// const input = Number(prompt('Masukan kode pegawai (11 digit) : '))
+
+// let golongan = Math.floor(input % 100000000000 / 10000000000)
+// let tgl = Math.floor(input % 10000000000 / 100000000)
+// let bln = Math.floor(input % 100000000 / 1000000)
+// let thn = Math.floor(input % 1000000 / 100)
+// let nn = Math.floor(input % 10000)
+
+// if (golongan >=1 && golongan <= 4) {
+//     let bulanName;
+//     switch(bln) {
+//         case 1: bulanName = 'JAN'; break;
+//         case 2: bulanName = 'FEB'; break;
+//         case 3: bulanName = 'MAR'; break;
+//         case 4: bulanName = 'APR'; break;
+//         case 5: bulanName = 'MEI'; break;
+//         case 6: bulanName = 'JUN'; break;
+//         case 7: bulanName = 'JUL'; break;
+//         case 8: bulanName = 'AGU'; break;
+//         case 9: bulanName = 'SEP'; break;
+//         case 10: bulanName = 'OKT'; break;
+//         case 11: bulanName = 'NOV'; break;
+//         case 12: bulanName = 'DES'; break;
+//         default: bulanName = 'Invalid';
+//     } console.log(`${input} adalah seorang pegawai bergolongan ${golongan}, 
+//     lahir pada tanggal ${tgl} ${bulanName} ${thn} dan bernomor urut ${3}`)
+// } else {
+//     console.log('Golongan tidak valid.')
+// }
+
+
+
+// 3
+
+
+// let dataWaktu = prompt("masukan jam menit detik");
+// let [jam, menit, detik] = dataWaktu.split(':').map(Number);
+// detik += 1;
+// if (detik > 59) {
+//     detik = 0;
+//     menit += 1;
+
+//     if (menit > 59) {
+//         menit = 0;
+//         jam += 1;
+
+//         if (jam > 23) {
+//             jam = 0;
+//         }
+//     }
+// }
+
+// let waktuBaru = `${String(jam).padStart(2, '0')}:${String(menit).padStart(2, '0')}:${String(detik).padStart(2, '0')}`;
+
+// console.log("Data Waktu Awal   : " + dataWaktu);
+// console.log("Setelah 1 Detik   : " + waktuBaru);
+
+
+
+let ss = 24;
+            let mm = 59;
+            let hh = 22;
+
+            let plusss = ss + 1;
+
+            if(plusss>59){
+                ss = 0;
+                mm= mm + 1;
+                
+
+       if(mm >59){
+            ss = 0;
+            mm = 0;
+            hh = hh + 1;
+
+
+                    if(hh >23){
+                        ss = 0;
+                        mm = 0;
+                        hh = 0;
+                   
+                }
+                }     
+                console.log(`${hh} jam ${mm} menit ${ss} detik`) 
+            }
+            else{
+                console.log(`${hh} jam ${mm} ${plusss}`)
+            }
+
+
+
+    </script>
+</body>
+</html>
